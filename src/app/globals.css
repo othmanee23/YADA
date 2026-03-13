@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fffdf7;
+  --foreground: #1d1d1d;
 }
 
 @theme inline {
@@ -12,15 +12,84 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes timeline-progress-grow {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes timeline-node-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0), 0 0 0 0 rgba(212, 175, 55, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 0 7px rgba(212, 175, 55, 0.14), 0 0 30px 0 rgba(212, 175, 55, 0.3);
+  }
+}
+
+@keyframes timeline-card-sheen {
+  0% {
+    opacity: 0;
+    transform: translateX(-140%) skewX(-18deg);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.24;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(220%) skewX(-18deg);
+  }
+}
+
+.timeline-progress-grow {
+  animation: timeline-progress-grow 1.05s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  transform-origin: top;
+}
+
+.timeline-node-pulse {
+  animation: timeline-node-pulse 2.2s ease-in-out infinite;
+}
+
+.timeline-card-sheen::after {
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 30%,
+    rgba(244, 221, 156, 0.3) 50%,
+    rgba(255, 255, 255, 0.05) 70%,
+    transparent 100%
+  );
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  animation: timeline-card-sheen 2.8s ease-in-out infinite;
 }
