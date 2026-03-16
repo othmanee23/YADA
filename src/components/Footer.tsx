@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { NewsletterForm } from "./NewsletterForm";
 
 function FacebookIcon() {
   return (
@@ -160,19 +161,7 @@ export function Footer() {
               <h3 className="text-sm font-extrabold uppercase tracking-[0.16em] text-[#D4AF37]">
                 Newsletter
               </h3>
-              <div className="mt-4 flex max-w-xl flex-col gap-3 sm:flex-row">
-                <input
-                  type="email"
-                  placeholder="Adresse Email"
-                  className="w-full rounded-full border border-white/25 bg-white/8 px-5 py-3 text-sm text-white placeholder:text-white/55 focus:border-[#D4AF37]/60 focus:outline-none"
-                />
-                <button
-                  type="button"
-                  className="rounded-full bg-[#D4AF37] px-6 py-3 text-sm font-extrabold uppercase tracking-[0.1em] text-[#1b1408] transition-colors hover:bg-[#e5c55a]"
-                >
-                  S&apos;inscrire
-                </button>
-              </div>
+              <NewsletterForm />
             </div>
 
             <div className="md:text-right">

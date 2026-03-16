@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Cormorant_Garamond } from "next/font/google";
+import { ContactForm } from "./ContactForm";
 
 const luxurySerif = Cormorant_Garamond({
   subsets: ["latin"],
@@ -55,66 +56,7 @@ export function ContactSection({ showInfoPanel = false }: ContactSectionProps) {
                   avec vous.
                 </p>
 
-                <form className="mt-8 grid gap-4 sm:grid-cols-2">
-                  <label className="block">
-                    <span className="sr-only">Nom et prénom</span>
-                    <input
-                      type="text"
-                      name="fullName"
-                      placeholder="Nom & Prénom"
-                      className="w-full rounded-2xl border border-[#d4af37]/22 bg-white px-5 py-4 text-sm text-[#1f170d] placeholder:text-[#8a7962] focus:border-[#b58a2b] focus:outline-none"
-                    />
-                  </label>
-
-                  <label className="block">
-                    <span className="sr-only">Email</span>
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email"
-                      className="w-full rounded-2xl border border-[#d4af37]/22 bg-white px-5 py-4 text-sm text-[#1f170d] placeholder:text-[#8a7962] focus:border-[#b58a2b] focus:outline-none"
-                    />
-                  </label>
-
-                  <label className="block">
-                    <span className="sr-only">Sujet</span>
-                    <input
-                      type="text"
-                      name="subject"
-                      placeholder="Sujet"
-                      className="w-full rounded-2xl border border-[#d4af37]/22 bg-white px-5 py-4 text-sm text-[#1f170d] placeholder:text-[#8a7962] focus:border-[#b58a2b] focus:outline-none"
-                    />
-                  </label>
-
-                  <label className="block">
-                    <span className="sr-only">Téléphone</span>
-                    <input
-                      type="tel"
-                      name="phone"
-                      placeholder="Téléphone"
-                      className="w-full rounded-2xl border border-[#d4af37]/22 bg-white px-5 py-4 text-sm text-[#1f170d] placeholder:text-[#8a7962] focus:border-[#b58a2b] focus:outline-none"
-                    />
-                  </label>
-
-                  <label className="block sm:col-span-2">
-                    <span className="sr-only">Message</span>
-                    <textarea
-                      name="message"
-                      placeholder="Message"
-                      rows={6}
-                      className="w-full rounded-[1.7rem] border border-[#d4af37]/22 bg-white px-5 py-4 text-sm text-[#1f170d] placeholder:text-[#8a7962] focus:border-[#b58a2b] focus:outline-none"
-                    />
-                  </label>
-
-                  <div className="sm:col-span-2">
-                    <button
-                      type="submit"
-                      className="inline-flex rounded-full bg-[linear-gradient(135deg,#a87a22,#d4af37)] px-7 py-4 text-sm font-extrabold uppercase tracking-[0.1em] text-[#1b1408] transition-transform duration-300 hover:-translate-y-0.5 hover:scale-[1.01]"
-                    >
-                      Envoyer
-                    </button>
-                  </div>
-                </form>
+                <ContactForm />
               </div>
 
               {showInfoPanel ? (
