@@ -76,9 +76,9 @@ const legalLinks = [
   { label: "Signaler un problème", href: "/contact" },
 ];
 const footerLogos = [
-  { src: "/images/logo-footer1.png", alt: "Logo footer 1" },
-  { src: "/images/logo-footer2.svg", alt: "Logo footer 2" },
-  { src: "/images/logo-footer3.png", alt: "Logo footer 3" },
+  { src: "/images/logo-footer1.webp", alt: "Logo footer 1" },
+  { src: "/images/logo-footer2.webp", alt: "Logo footer 2" },
+  { src: "/images/logo-footer3.webp", alt: "Logo footer 3" },
 ];
 
 export function Footer() {
@@ -95,7 +95,7 @@ export function Footer() {
             <div className="lg:col-span-2">
               <Link href="/#accueil" className="inline-block">
                 <Image
-                  src="/images/yada-logo.png"
+                  src="/images/yada-logo.webp"
                   alt="YADA Coiffure"
                   width={320}
                   height={110}

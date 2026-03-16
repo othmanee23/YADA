@@ -21,7 +21,7 @@ export function ContactSection({ showInfoPanel = false }: ContactSectionProps) {
         >
           <div className="relative min-h-[320px] lg:min-h-full">
             <Image
-              src="/images/contact-showcase.jpg"
+              src="/images/contact-showcase.webp"
               alt="Présentation YADA coiffure"
               fill
               className="object-cover"

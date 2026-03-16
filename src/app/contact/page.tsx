@@ -16,7 +16,7 @@ export default function ContactPage() {
         <section className="relative min-h-[50svh] overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/images/contact-showcase.jpg')" }}
+            style={{ backgroundImage: "url('/images/contact-showcase.webp')" }}
             aria-hidden="true"
           />
           <div

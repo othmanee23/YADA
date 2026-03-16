@@ -13,7 +13,7 @@ export function Hero() {
     >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero1.jpg')" }}
+        style={{ backgroundImage: "url('/images/hero1.webp')" }}
         aria-hidden="true"
       />
 

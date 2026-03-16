@@ -3,6 +3,7 @@
 :root {
   --background: #fffdf7;
   --foreground: #1d1d1d;
+  --overscroll-background: #0e0a06;
 }
 
 @theme inline {
@@ -12,14 +13,17 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  background: var(--overscroll-background);
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
+  min-height: 100vh;
+  overscroll-behavior-y: none;
 }
 
 @keyframes timeline-progress-grow {

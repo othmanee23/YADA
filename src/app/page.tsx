@@ -132,7 +132,7 @@ export default function Home() {
                 <div className="grid gap-4">
                   <div className="group relative min-h-[390px] overflow-hidden rounded-[2rem] border border-[#D4AF37]/25 transition-transform duration-300 ease-out hover:scale-[1.02]">
                     <Image
-                      src="/images/image5.jpg"
+                      src="/images/image5.webp"
                       alt="Services coiffure YADA"
                       fill
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
@@ -149,7 +149,7 @@ export default function Home() {
 
                   <div className="group relative min-h-[390px] overflow-hidden rounded-[2rem] border border-[#D4AF37]/25 transition-transform duration-300 ease-out hover:scale-[1.02]">
                     <Image
-                      src="/images/image6.jpg"
+                      src="/images/image6.webp"
                       alt="Nouvelle tendance coiffure YADA"
                       fill
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"

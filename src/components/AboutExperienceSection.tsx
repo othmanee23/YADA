@@ -11,19 +11,19 @@ const luxurySerif = Cormorant_Garamond({
 
 const experienceImages = [
   {
-    src: "/images/about-experience-1.jpg",
+    src: "/images/about-experience-1.webp",
     alt: "Expérience coiffure YADA 1",
   },
   {
-    src: "/images/about-experience-2.jpg",
+    src: "/images/about-experience-2.webp",
     alt: "Expérience coiffure YADA 2",
   },
   {
-    src: "/images/about-experience-3.jpg",
+    src: "/images/about-experience-3.webp",
     alt: "Expérience coiffure YADA 3",
   },
   {
-    src: "/images/about-experience-4.jpg",
+    src: "/images/about-experience-4.webp",
     alt: "Expérience coiffure YADA 4",
   },
 ];

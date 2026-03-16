@@ -18,7 +18,7 @@ export default function ServicesPage() {
         <section className="relative min-h-[50svh] overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/images/hero3.jpg')" }}
+            style={{ backgroundImage: "url('/images/hero3.webp')" }}
             aria-hidden="true"
           />
           <div

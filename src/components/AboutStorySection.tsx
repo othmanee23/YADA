@@ -86,7 +86,7 @@ export function AboutStorySection() {
                 <div className="relative aspect-[9/19.5] overflow-hidden rounded-[2.55rem] bg-black">
                   <video
                     className="h-full w-full object-cover"
-                    src="/images/yada-story.mp4"
+                    src="/images/yada-story.webm"
                     autoPlay
                     muted
                     loop

@@ -84,17 +84,17 @@ export function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-4 z-50 px-4">
-      <div className="relative z-20 mx-auto w-full max-w-7xl overflow-visible rounded-[1.65rem] border border-white/25 bg-transparent shadow-[0_16px_42px_rgba(0,0,0,0.28)] backdrop-blur-xl">
+      <div className="relative z-20 mx-auto w-full max-w-7xl overflow-visible md:rounded-[1.65rem] md:border md:border-white/25 md:bg-transparent md:shadow-[0_16px_42px_rgba(0,0,0,0.28)] md:backdrop-blur-xl">
         <div className="flex items-center justify-between px-4 py-4 md:relative md:px-7 md:py-7">
           <div className="flex w-full items-center justify-between md:hidden">
             <Link href="/#accueil" onClick={() => setIsMenuOpen(false)}>
               <Image
-                src="/images/yada-logo.png"
+                src="/images/yada-logo.webp"
                 alt="YADA Coiffure"
-                width={280}
-                height={94}
+                width={340}
+                height={114}
                 priority
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
             </Link>
 
@@ -104,7 +104,7 @@ export function Navbar() {
               aria-controls="mobile-navigation"
               aria-expanded={isMenuOpen}
               onClick={() => setIsMenuOpen((current) => !current)}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white transition-colors hover:bg-white/16"
+              className="inline-flex h-[3.25rem] w-[3.25rem] items-center justify-center text-white drop-shadow-[0_6px_18px_rgba(0,0,0,0.45)] transition-colors hover:text-[#f0d88b]"
             >
               {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
             </button>
@@ -134,7 +134,7 @@ export function Navbar() {
           <div className="absolute left-1/2 top-1/2 z-10 hidden -translate-x-1/2 -translate-y-[70%] flex-col items-center gap-1 md:flex">
             <Link href="/#accueil">
               <Image
-                src="/images/yada-logo.png"
+                src="/images/yada-logo.webp"
                 alt="YADA Coiffure"
                 width={360}
                 height={120}
@@ -187,7 +187,7 @@ export function Navbar() {
 
         <aside
           id="mobile-navigation"
-          className={`absolute inset-y-0 left-0 flex w-[84vw] max-w-sm flex-col bg-[linear-gradient(180deg,#102419_0%,#1a3727_60%,#7e5132_100%)] px-5 pb-8 pt-28 text-white shadow-[0_28px_60px_rgba(0,0,0,0.36)] transition-transform duration-300 ease-out ${
+          className={`absolute inset-y-0 left-0 flex w-[92vw] max-w-[28rem] flex-col border-r border-[#d4af37]/16 bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.12),transparent_28%),linear-gradient(180deg,#0b100e_0%,#132b1d_56%,#1c241f_100%)] px-5 pb-8 pt-28 text-white shadow-[0_28px_60px_rgba(0,0,0,0.36)] transition-transform duration-300 ease-out ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >

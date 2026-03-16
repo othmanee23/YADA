@@ -16,7 +16,7 @@ export default function TestimonialsPage() {
         <section className="relative min-h-[50svh] overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/images/hero4.jpg')" }}
+            style={{ backgroundImage: "url('/images/hero4.webp')" }}
             aria-hidden="true"
           />
           <div
