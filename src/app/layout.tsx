@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   title: "YADA Coiffure",
   description:
     "Trouvez facilement un coiffeur ou une coiffeuse disponible pres de chez vous.",
+  icons: {
+    icon: "/images/yada-logo.webp",
+    shortcut: "/images/yada-logo.webp",
+    apple: "/images/yada-logo.webp",
+  },
 };
 
 export default function RootLayout({
