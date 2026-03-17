@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     if (payload.website) {
       return NextResponse.json({
         ok: true,
-        message: "Merci, votre email a bien ete enregistre.",
+        message: "Merci, votre email a bien été enregistré.",
       });
     }
 
@@ -45,7 +45,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({
       ok: true,
-      message: "Merci, votre email a bien ete enregistre.",
+      message: "Merci, votre email a bien été enregistré.",
     });
   } catch (error) {
     console.error("POST /api/newsletter failed", error);
@@ -54,7 +54,7 @@ export async function POST(request: Request) {
       {
         ok: false,
         message:
-          "La newsletter n'est pas configuree cote serveur. Verifiez Supabase et les variables d'environnement.",
+          "La newsletter n'est pas configurée côté serveur.",
       },
       { status: 500 }
     );

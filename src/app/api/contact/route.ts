@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     if (payload.company) {
       return NextResponse.json({
         ok: true,
-        message: "Votre message a bien ete envoye.",
+        message: "Votre message a bien été envoyé.",
       });
     }
 
@@ -45,7 +45,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({
       ok: true,
-      message: "Votre message a bien ete envoye.",
+      message: "Votre message a bien été envoyé.",
     });
   } catch (error) {
     console.error("POST /api/contact failed", error);
@@ -54,7 +54,7 @@ export async function POST(request: Request) {
       {
         ok: false,
         message:
-          "Le formulaire n'est pas configure cote serveur. Verifiez Supabase et les variables d'environnement.",
+          "Le formulaire n'est pas configuré côté serveur.",
       },
       { status: 500 }
     );

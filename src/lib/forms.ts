@@ -56,11 +56,11 @@ export function validateContactPayload(payload: ContactPayload) {
   }
 
   if (payload.phone && payload.phone.length < 6) {
-    return "Veuillez saisir un numero de telephone valide.";
+    return "Veuillez saisir un numéro de télephone valide.";
   }
 
   if (!payload.message || payload.message.length < 10) {
-    return "Votre message doit contenir au moins 10 caracteres.";
+    return "Votre message doit contenir au moins 10 caractères.";
   }
 
   return null;

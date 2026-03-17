@@ -12,7 +12,13 @@ export function Hero() {
       className="relative h-[100svh] min-h-[680px] w-full overflow-hidden"
     >
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
+        style={{ backgroundImage: "url('/images/about-experience-4.webp')" }}
+        aria-hidden="true"
+      />
+
+      <div
+        className="absolute inset-0 hidden bg-cover bg-center bg-no-repeat md:block"
         style={{ backgroundImage: "url('/images/hero1.webp')" }}
         aria-hidden="true"
       />
@@ -27,35 +33,37 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-center justify-center px-6 pb-16 pt-28 md:px-10">
-        <div className="w-full max-w-5xl px-2 text-center text-white md:px-0">
-          <p className="relative -top-3 text-xs font-semibold uppercase tracking-[0.28em] text-[#e7c57f] md:-top-4 md:text-sm">
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-stretch justify-center px-6 pb-16 pt-28 md:items-center md:px-10">
+        <div className="flex h-full w-full max-w-5xl flex-col px-2 text-center text-white md:block md:h-auto md:px-0">
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#e7c57f] md:relative md:-top-4 md:text-sm">
             YADA Coiffure
           </p>
-          <h1
-            className={`${luxurySerif.className} mx-auto mt-5 max-w-4xl text-4xl font-semibold leading-[0.98] md:text-7xl`}
-          >
-            YADA – Votre coiffeur à portée de main
-          </h1>
-          <p className="mx-auto mt-5 max-w-3xl text-base text-white/85 md:text-xl">
-            Trouvez facilement un coiffeur ou une coiffeuse, à domicile ou en
-            salon, pour hommes et femmes. Réservez en quelques clics et profitez
-            d’une expérience coiffure unique.
-          </p>
+          <div className="mt-8 md:mt-0">
+            <h1
+              className={`${luxurySerif.className} mx-auto max-w-4xl text-4xl font-semibold leading-[0.98] md:mt-5 md:text-7xl`}
+            >
+              YADA – Votre coiffeur à portée de main
+            </h1>
+            <p className="mx-auto mt-5 max-w-3xl text-base text-white/85 md:text-xl">
+              Trouvez facilement un coiffeur ou une coiffeuse, à domicile ou en
+              salon, pour hommes et femmes. Réservez en quelques clics et profitez
+              d’une expérience coiffure unique.
+            </p>
 
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-xs font-semibold uppercase tracking-[0.12em] md:text-sm">
-            <span className="rounded-full border border-[#d4af37]/45 bg-[#d4af37]/12 px-3 py-1.5 text-[#f1d6a3]">
-              Creneaux en temps reel
-            </span>
-            <span className="rounded-full border border-[#d4af37]/45 bg-[#d4af37]/12 px-3 py-1.5 text-[#f1d6a3]">
-              Avis clients reels
-            </span>
-            <span className="rounded-full border border-[#d4af37]/45 bg-[#d4af37]/12 px-3 py-1.5 text-[#f1d6a3]">
-              Reservation express
-            </span>
+            <div className="mt-6 hidden flex-wrap items-center justify-center gap-2 text-xs font-semibold uppercase tracking-[0.12em] md:flex md:text-sm">
+              <span className="rounded-full border border-[#d4af37]/45 bg-[#d4af37]/12 px-3 py-1.5 text-[#f1d6a3]">
+                Creneaux en temps reel
+              </span>
+              <span className="rounded-full border border-[#d4af37]/45 bg-[#d4af37]/12 px-3 py-1.5 text-[#f1d6a3]">
+                Avis clients reels
+              </span>
+              <span className="rounded-full border border-[#d4af37]/45 bg-[#d4af37]/12 px-3 py-1.5 text-[#f1d6a3]">
+                Reservation express
+              </span>
+            </div>
           </div>
 
-          <div className="mx-auto mt-8 flex w-full max-w-3xl flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="mx-auto mt-auto flex w-full max-w-3xl flex-col gap-3 pb-2 pt-10 sm:flex-row sm:items-center md:mt-8 md:pb-0 md:pt-0">
             <input
               type="text"
               placeholder="Entrez votre ville ou quartier"
